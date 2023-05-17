@@ -1,0 +1,19 @@
+body {
+      background: red;
+      & > p {
+            background: green;
+      }
+
+      & > div {
+            background: yellow
+      }
+}
+
+.someClass {
+      width: 40px;
+      height: 40px;
+      color: darkblue;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}

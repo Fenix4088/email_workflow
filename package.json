@@ -1,0 +1,24 @@
+{
+  "name": "emailWorkflow",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "watch": "gulp watch"
+  },
+  "browserslist": [
+    "> .2% or last 2 versions",
+    "not dead"
+  ],
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-inline-css": "^4.0.0"
+  },
+  "dependencies": {
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "sass": "^1.62.1"
+  }
+}
