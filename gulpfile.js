@@ -19,7 +19,6 @@ const PATH = {
 function html() {
       return gulp.src(PATH.PUG_FILES)
             .pipe(pug({pretty: true}))
-            // .pipe(gulp.dest("dist"))
             .pipe(gulp.dest("src/html"))
 
 
