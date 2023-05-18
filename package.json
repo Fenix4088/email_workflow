@@ -4,7 +4,8 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "watch": "gulp watch"
+    "watch": "yarn build && gulp watch",
+    "build": "gulp buildStyles && gulp html"
   },
   "browserslist": [
     "> .2% or last 2 versions",

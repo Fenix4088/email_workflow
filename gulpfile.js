@@ -13,14 +13,22 @@ const SRC = path.resolve('./src');
 
 const PATH = {
       SCSS_DIR: `${SRC}/scss/**/*.scss`,
+      CSS_DIR: `${SRC}/css/**/*.css`,
       PUG_ENTRY: `${SRC}/emails/**/*.pug`,
       PUG_COMPONENTS: `${SRC}/components/**/*.pug`
 }
 
+
 function html() {
       return gulp.src(PATH.PUG_ENTRY)
             .pipe(pug({pretty: true}))
-            .pipe(gulp.dest("src/html"))
+            .pipe(inlineCss({
+                  applyStyleTags: true,
+                  applyLinkTags: true,
+                  removeStyleTags: true,
+                  removeLinkTags: true
+            }))
+            .pipe(gulp.dest("dist/"))
 
 
 }
@@ -36,24 +44,10 @@ function buildStyles() {
 };
 
 
-function convertInline() {
-      return gulp.src('./src/html/**/*.html')
-            .pipe(inlineCss({
-                        applyStyleTags: true,
-                        applyLinkTags: true,
-                        removeStyleTags: true,
-                        removeLinkTags: true
-            }))
-            .pipe(gulp.dest('dist/'));
-
-}
-
 exports.buildStyles = buildStyles;
-exports.convertInline = convertInline;
 exports.html = html;
 
 exports.watch = function async () {
       gulp.watch(PATH.SCSS_DIR, buildStyles);
-      gulp.watch([PATH.PUG_ENTRY, PATH.PUG_COMPONENTS], html);
-      gulp.watch(['./src/html/**/*.html', './src/css/bundle.css'], convertInline);
+      gulp.watch([PATH.PUG_ENTRY, PATH.PUG_COMPONENTS, PATH.CSS_DIR], html);
 };
