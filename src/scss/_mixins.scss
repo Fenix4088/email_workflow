@@ -1,0 +1,13 @@
+@mixin fontWeight($weight: 400) {
+      font-weight: $weight;
+}
+
+@mixin fontInter($weight: 400) {
+      font-family: 'Inter', sans-serif;
+      @include fontWeight($weight)
+}
+
+@mixin fontRoboto($weight: 400) {
+      font-family: 'Roboto', sans-serif;
+      @include fontWeight($weight)
+}
