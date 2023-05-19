@@ -5,17 +5,20 @@
   "license": "MIT",
   "scripts": {
     "watch": "yarn build && gulp watch",
-    "build": "gulp buildStyles && gulp html"
+    "build": "gulp buildStyles && gulp html",
+    "prettier": "prettier --write \"**/*.pug\""
   },
   "browserslist": [
     "> .2% or last 2 versions",
     "not dead"
   ],
   "devDependencies": {
+    "@prettier/plugin-pug": "^2.5.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
     "gulp-concat": "^2.6.1",
-    "gulp-inline-css": "^4.0.0"
+    "gulp-inline-css": "^4.0.0",
+    "prettier": "^2.8.8"
   },
   "dependencies": {
     "gulp-pug": "^5.0.0",
