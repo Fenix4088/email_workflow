@@ -27,14 +27,50 @@ img {
 }
 
 .main {
+      padding: 160px 100px 44px;
       width: 100%;
       max-width: 800px;
       margin: 0 auto;
       border-spacing: 0;
       background-color: $mainBg;
+      border: 1px solid red;
 }
 
 // ----- COMMON  ------
 .section {
       width: 100%;
+}
+
+.two-columns {
+      text-align: center;
+      font-size: 0;
+}
+
+.column {
+      width: 100%;
+}
+
+//--- LOGO ---
+.logo-wrapper {
+      padding-bottom: 60px;
+      text-align: center;
+      font-size: 0;
+      & > .logo {
+            width: 260px
+      }
+}
+
+// --- INNER WRAPPER ---
+.inner-wrapper {
+      padding: 24px 24px 60px;      
+      width: 100%;
+      max-width: 600px;
+      margin: 0 auto;
+      border-spacing: 0;
+      border-radius: 24px;
+      border: 1px solid blue;
+}
+
+.header-img {
+      padding-bottom: 32px;
 }

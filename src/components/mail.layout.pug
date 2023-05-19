@@ -1,4 +1,6 @@
 include ./mixins/section.mixin.pug
+include ./mixins/image.mixin.pug
+
 doctype html 
 html
   head
@@ -18,9 +20,18 @@ html
       table.main
         +section
           tr
-            td.two-columns
+            td.logo-wrapper
               table.column
                 tr
                   td
-                    a
-                      img(src="", alt="")
+                    +image("../img/logo.png", "Logo").logo(
+                      href="#"
+                    ) 
+        +section
+          tr
+            td
+              table.inner-wrapper
+                +section
+                  img(src="../img/background.png", alt="Car on a road" class="header-img")
+                +section
+                  block content
