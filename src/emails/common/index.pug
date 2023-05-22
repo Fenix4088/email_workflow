@@ -1,4 +1,6 @@
 extends ../../components/mail.layout.pug
+include ../../components/mixins/fancyList.mixin.pug
 
 block content 
-      div Hello content
+      p Thank you for your trust in LeaseTeq, your digital Swiss leasing provider. We are very pleased to be able to finance your Tesla and welcome you as a customer. In line with Tesla, we also work completely digitally and use the possibilities of modern technology. 
+      +fancyList(["Hello", "Fancy", "List"])
