@@ -90,5 +90,10 @@ img {
 
 //--- Fancy List ----
 .fancy-list {
-      list-style-type: "🔔";
+      list-style-image: url('../img/rectangle.svg');
+}
+
+//--- Link ----
+.link {
+      color: $green;
 }
