@@ -1,5 +1,7 @@
 include ./mixins/section.mixin.pug
 include ./mixins/image.mixin.pug
+include ./mixins/subtitle.mixin.pug
+
 
 
 doctype html 
@@ -28,13 +30,15 @@ html
                     +image("../img/logo.png", "Logo").logo(
                       href="#"
                     ) 
-        +section
+        +section(class="inner-wrapper")
           tr
             td
-              table.inner-wrapper
+              table
                 +section
                   img(src="../img/background.png", alt="Car on a road" class="header-img")
                 +section 
                   h1.client-name {Herr} {Williamson}
                 +section(class="content")
                   block content
+                +section 
+                  div HELLO
