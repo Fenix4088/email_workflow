@@ -74,6 +74,7 @@ img {
 
 // --- INNER WRAPPER ---
 .inner-wrapper {
+      margin-bottom: 60px;
       padding: 24px 24px 60px;      
       width: 100%;
       max-width: 600px;
@@ -145,5 +146,16 @@ img {
 
       .download-icon {
             cursor: pointer
+      }
+}
+
+// ---------- Contact Us -----------------
+
+.contact-us {
+      & > * {
+            font-size: 12px;
+      }
+      .browser-link-wrapper {
+            color: $mainTxt
       }
 }

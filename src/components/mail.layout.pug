@@ -1,6 +1,8 @@
 include ./mixins/section.mixin.pug
 include ./mixins/image.mixin.pug
 include ./mixins/subtitle.mixin.pug
+include ./mixins/link.mixin.pug
+include ./mixins/contactLink.mixin.pug
 
 
 
@@ -44,3 +46,19 @@ html
                   +devider
                   +subtitle("With kind regards, ")
                   +subtitle("Your LeaseTeq Team ♥")
+            +section(class="contact-us")
+              p.browser-link-wrapper 
+                | Is this email not displaying correctly? 
+                +link("#", "View it in your browser")(target="_blank")
+                table 
+                  +section 
+                    tr 
+                      td
+                        +contactLink("../img/phone.icon.svg", "+41 44 787 01 21")(href="tel:+41447870121")
+                      td 
+                        +contactLink("../img/envelop.icon.svg", "support@leaseteq.ch")(href="mailto:support@leaseteq.ch")
+                    tr
+                      td 
+                        +contactLink("../img/web.icon.svg", "www.leaseteq.ch")(href="www.leaseteq.ch")
+
+                        
