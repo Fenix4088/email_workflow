@@ -7,23 +7,23 @@ include ../../components/mixins/devider.mixin.pug
 include ../../components/mixins/section.mixin.pug
 include ../../components/mixins/downloadLink.mixin.pug
 
-
-block content 
-      +section
-            p Thank you for your trust in LeaseTeq, your digital Swiss leasing provider. We are very pleased to be able to finance your Tesla and welcome you as a customer. In line with Tesla, we also work completely digitally and use the possibilities of modern technology.
-            +devider
-      +section 
-            +fancyList(["Hello", "Fancy", "List"])
-            +devider
-      +section
-            p 
-                  | You will receive a payment invitation from Tesla for the down payment prior to your vehicle delivery, if you have selected a down payment. If you haven't completed the comprehensive insurance registration yet, please click here to review our offer and proceed to put in place your Zurich car insurance. Once you have paid the down payment to Tesla, the comprehensive insurance is in place, and the vehicle is ready, Tesla can deliver your new vehicle to you. You will receive details about your vehicle registration & delivery directly from Tesla. After vehicle delivery, you will receive an automated email from us with the invoice for the monthly lease payment. Do you have any questions about your contract? Then we look forward to receiving your e-mail at 
-                  +link("#", "finance@leaseteq.ch")
-                  |  text bottom
-      +section
-            +button("Learn more")(href="#")
-            +devider
-      +section 
-            +downloadLink("document_name.pdf")
-            +downloadLink("document_name.pdf")
-            +downloadLink("document_name.pdf")
+block content
+  +section
+    p Thank you for your trust in LeaseTeq, your digital Swiss leasing provider. We are very pleased to be able to finance your Tesla and welcome you as a customer. In line with Tesla, we also work completely digitally and use the possibilities of modern technology.
+    +devider
+  +section
+    +fancyList(["Hello", "Fancy", "List"])
+    +devider
+  +section
+    p
+      | You will receive a payment invitation from Tesla for the down payment prior to your vehicle delivery, if you have selected a down payment. If you haven't completed the comprehensive insurance registration yet, please click here to review our offer and proceed to put in place your Zurich car insurance. Once you have paid the down payment to Tesla, the comprehensive insurance is in place, and the vehicle is ready, Tesla can deliver your new vehicle to you. You will receive details about your vehicle registration & delivery directly from Tesla. After vehicle delivery, you will receive an automated email from us with the invoice for the monthly lease payment. Do you have any questions about your contract? Then we look forward to receiving your e-mail at
+      +link("#", "finance@leaseteq.ch")
+      |
+      | text bottom
+  +section
+    +button("Learn more")(href="#")
+    +devider
+  +section
+    +downloadLink("document_name.pdf")
+    +downloadLink("document_name.pdf")
+    +downloadLink("document_name.pdf")
