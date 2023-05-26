@@ -1,0 +1,7 @@
+mixin contactLink(src = "", txt = "")
+  table.contact-link-wrapper
+    tr
+      td
+        a.contact-link&attributes(attributes)
+          img.icon(src=src, alt="icon")
+          span.text #{ txt }

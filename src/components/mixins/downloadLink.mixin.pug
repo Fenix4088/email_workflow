@@ -1,0 +1,14 @@
+include ./image.mixin.pug
+mixin downloadLink(docName = "file.pdf", docSize = "100kb", href = "#")
+  table.download-wrapper&attributes(attributes)
+    tr
+      td
+        img(src="../img/file.icon.svg", alt="download file icon")
+      td
+        .green-text #{ docName }
+        div #{ docSize }
+      td.download-icon
+        +image("../img/download.icon.svg", "download icon")(
+          href=href,
+          download
+        )
