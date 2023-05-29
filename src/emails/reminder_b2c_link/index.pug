@@ -1,0 +1,25 @@
+extends ../../components/mail.layout.pug
+include ../../components/mixins/button.mixin.pug
+include ../../components/mixins/link.mixin.pug
+
+
+block content
+      +section(class="mb-24") 
+            p Thank you for your trust in LeaseTeq, your digital Swiss leasing provider. We are very pleased to be able to finance your Tesla and welcome you as a potential customer. In line with Tesla, we also work completely digitally and use the possibilities of modern technology.
+      +section(class="mb-24") 
+            p Please click here to pursue your leasing application journey with us.
+      +section(class="mb-24")
+            center
+                  +button("Start leasing application journey") 
+      +section(class="mb-24") 
+            p 
+            | You may also copy/paste this link into your browser:
+            br
+            | {FULL_URL}
+      +section(class="mb-24")
+            p 
+            | Do you have any questions about your contract? Then we look forward to receiving your e-mail at 
+            +link("mailto:finance@leaseteq.ch", "finance@leaseteq.ch")
+            | .
+      +section 
+            p We already wish you a good trip!
