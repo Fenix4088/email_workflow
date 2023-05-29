@@ -39,7 +39,7 @@ html
                     src="http://lt-leasing-development-lb-1283385798.eu-central-1.elb.amazonaws.com/resource/image/background",
                     alt="Car on a road"
                   )
-                +section
+                +section(class="mb-24")
                   h1.client-name {Herr} {Williamson}
                 +section.content
                   block content
@@ -47,33 +47,33 @@ html
                   +divider
                   +subtitle("With kind regards, ")
                   +subtitle("Your LeaseTeq Team ♥")
-            +section.browser-link
-              p.browser-link-wrapper
-                | Is this email not displaying correctly? 
-                +link("/", "View it in your browser")(
-                  target="_blank"
-                )
-            +section.contact-us
-              tr
-                td
-                  +contactLink("../img/phone.png", "+41 44 787 01 21")(
-                    href="tel:+41447870121"
-                  )
-                td
-                  +contactLink("../img/envelop.png", "support@leaseteq.ch")(
-                    href="mailto:support@leaseteq.ch"
-                  )
-                td
-              tr
-                td
-                  +contactLink("../img/web.png", "www.leaseteq.ch")(href="www.leaseteq.ch")
-            +section 
-              +divider
-            +section
-              tr 
-                td 
-                  +hint("LeaseTeq AG | Talstrasse 37 | CH-8808 Pfäffikon SZ | Switzerland | UID: CHE-167.950.125")(class="text-center")
-            +section      
+        +section.browser-link
+          p.browser-link-wrapper
+            | Is this email not displaying correctly? 
+            +link("/", "View it in your browser")(
+              target="_blank"
+            )
+        +section.contact-us
+          tr
+            td
+              +contactLink("../img/phone.png", "+41 44 787 01 21")(
+                href="tel:+41447870121"
+              )
+            td
+              +contactLink("../img/envelop.png", "support@leaseteq.ch")(
+                href="mailto:support@leaseteq.ch"
+              )
+            td
+          tr
+            td
+              +contactLink("../img/web.png", "www.leaseteq.ch")(href="www.leaseteq.ch")
+        +section 
+          +divider
+        +section
+          tr 
+            td 
+              +hint("LeaseTeq AG | Talstrasse 37 | CH-8808 Pfäffikon SZ | Switzerland | UID: CHE-167.950.125")(class="text-center")
+        +section      
               tr 
                 td 
                   +hint("If you are not the correct recipient or have received this email in mistake, please inform the sender immediately and destroy this email.")(class="text-center")
