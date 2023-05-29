@@ -1,0 +1,21 @@
+extends ../../components/mail.layout.pug
+include ../../components/mixins/section.mixin.pug
+include ../../components/mixins/fancyList.mixin.pug
+
+
+
+block content 
+      +section(class="mb-24")
+            p We are pleased about your signed leasing contract and would like to take this opportunity to thank you for the trust you have placed in us.
+      +section(class="mb-24")
+            p In order not to delay your planned vehicle delivery, we kindly ask you to promptly send us the following documents as an attachment to your leasing contract:
+      +section(class="mb-24")
+            +fancyList(["Proof(s) of your monthly household net income not older than 3 months (e.g. pay slip(s), salary statement, etc.)."])
+      +section(class="mb-24")
+            p Please send us the documents digitally (PDF file) by replying directly to this e-mail.
+      +section(class="mb-24")
+            p As a Swiss leasing provider, the security of your data is very important to us. We limit ourselves to collecting the legally required information and process it securely.
+      +section(class="mb-24")
+            p Please do not hesitate to contact us if you have any questions. We will be happy to help you.
+      +section(class="mb-24")
+            p Thank you for your support.
