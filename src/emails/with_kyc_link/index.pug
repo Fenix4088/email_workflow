@@ -1,0 +1,13 @@
+extends ../../components/mail.layout.pug
+include ../../components/mixins/button.mixin.pug
+
+block content
+      +section(class="mb-24") 
+            p Your goal is within reach: Your leasing application has been provisionally approved based on the information you provided. In the next step, please start the Video-Ident procedure via the link below to complete the digital signing of the contract.
+      +section(class="mb-24")
+            center
+                  +button("Start Video-Ident process") 
+      +section(class="mb-24") 
+            p For a smooth process, we recommend that you deactivate content blockers and allow pop-up windows so that the process can be started at IDnow. Or simply use the IDnow Ident app on your smartphone and enter the displayed ID in the app to complete the signing of the contract. We recommend a WLAN connection for this.
+      +section
+            p Please note that the service of our partner IDnow is available Monday to Saturday from 7 am to 10 pm.

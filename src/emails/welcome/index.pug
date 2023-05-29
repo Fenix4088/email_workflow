@@ -1,0 +1,26 @@
+extends ../../components/mail.layout.pug
+include ../../components/mixins/section.mixin.pug
+include ../../components/mixins/link.mixin.pug
+include ../../components/mixins/divider.mixin.pug
+include ../../components/mixins/downloadLink.mixin.pug
+
+
+block content 
+      +section(class="mb-24")
+            p Thank you for your trust in LeaseTeq, your digital Swiss leasing provider. We are very pleased to be able to finance your Tesla and welcome you as a customer. In line with Tesla, we also work completely digitally and use the possibilities of modern technology.
+      +section(class="mb-24")
+            p Enclosed you will receive your signed contract. What happens next?
+      +section(class="mb-24")
+            p You will receive a payment invitation from Tesla for the down payment prior to your vehicle delivery, if you have selected a down payment.
+            | If you haven't completed the comprehensive insurance registration yet, please 
+            +link("#", "click here") 
+            |  to review our offer and proceed to put in place your Zurich car insurance.
+            br
+            | Once you have paid the down payment to Tesla, the comprehensive insurance is in place, and the vehicle is ready, Tesla can deliver your new vehicle to you. You will receive details about your vehicle registration & delivery directly from Tesla.
+            | After vehicle delivery, you will receive an automated email from us with the invoice for the monthly lease payment.
+            br
+            | Do you have any questions about your contract? Then we look forward to receiving your e-mail at 
+            +link("mailto:finance@leaseteq.ch", "finance@leaseteq.ch")
+            | .
+      +section
+            p We already wish you a good trip!
