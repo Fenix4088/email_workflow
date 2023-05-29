@@ -1,0 +1,16 @@
+extends ../../components/mail.layout.pug
+include ../../components/mixins/section.mixin.pug
+include ../../components/mixins/fancyList.mixin.pug
+
+
+block content 
+      +section(class="mb-24")
+            p We would like to remind you that we require the following information as an attachment to your leasing contract:
+      +section(class="mb-24")
+            +fancyList(["A copy of your foreigner's identity card if you are not a Swiss citizen.", "A proof of salary (not older than three months)"])
+      +section(class="mb-24")
+            p Please send us the documents digitally (PDF file) by replying directly to this email.
+      +section(class="mb-24")
+            p As a Swiss leasing provider, the security of your data is very important to us. We limit ourselves to collecting the legally required information and process it securely.
+      +section(class="mb-24")
+            p If you have any questions, please do not hesitate to contact us.
