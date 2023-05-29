@@ -41,7 +41,7 @@ img {
       margin: 0 auto;
       border-spacing: 0;
       background-color: $mainBg;
-      background-image: url("../img/bg-blured.png");
+      background-image: url("http://lt-leasing-development-lb-1283385798.eu-central-1.elb.amazonaws.com/resource/image/bg-blured");
       background-size: contain;
       background-repeat: no-repeat;
       backdrop-filter: blur(8px);
@@ -84,6 +84,7 @@ img {
       margin: 0 auto;
       border-spacing: 0;
       border-radius: 24px;
+      background: #fff;
       background: linear-gradient(165.48deg, #FFFFFF -0.69%, #FFFFFF 21.96%, #FFF3F3 29.62%, #FFFFFF 42.74%, rgba(255, 243, 243, 0.76) 70.08%, #FFFFFF 104.29%),
       linear-gradient(0deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3));
 }
@@ -104,7 +105,7 @@ img {
 //--- Fancy List ----
 .fancy-list {
       padding-left: 40px;
-      list-style-image: url('../img/rectangle.svg');
+      list-style-image: url('../img/rectangle.png');
 }
 
 //--- Link ----
@@ -125,7 +126,7 @@ img {
 }
 
 //--- button ----
-.devider {
+.divider {
       margin: 32px 0;
       width: 100%;
       background: radial-gradient(40.67% 2749531.62% at 50% 0%, #C4C4C4 0%, rgba(220, 220, 220, 0) 100%);
@@ -183,10 +184,7 @@ img {
 
             .icon {
                 margin-right: 14px;  
-            }
 
-            .text {
-                  vertical-align: middle;
             }
 
             & > * {
